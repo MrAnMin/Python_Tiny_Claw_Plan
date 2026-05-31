@@ -1,0 +1,35 @@
+import logging
+import sys
+
+logging.basicConfig(level=logging.INFO, format="%(message)s")
+logger = logging.getLogger(__name__)
+
+
+def Main() -> None:
+    print("🚀 欢迎来到 python-tiny-claw 引擎启动序列")
+
+    # TODO: 1. 初始化模型 Provider (大脑)
+    # provider = NewClaudeProvider(...)
+
+    # TODO: 2. 初始化 Tool Registry (手脚)
+    # registry = NewRegistry()
+    # registry.Register(NewBashTool())
+
+    # TODO: 3. 初始化上下文管理器 (内存管理器)
+    # ctx_manager = NewManager(...)
+
+    # TODO: 4. 组装并启动核心 Engine (操作系统心脏)
+    # engine = NewAgentEngine(provider, registry, ctx_manager)
+
+    # print("开始执行任务...")
+    # try:
+    #     engine.Run("帮我检查一下当前目录下的文件并输出一个 README.md 大纲")
+    # except Exception as e:
+    #     logger.error("引擎运行崩溃: %s", e)
+    #     sys.exit(1)
+
+    logger.info("架构蓝图搭建完毕，等待各核心模块注入！")
+
+
+if __name__ == "__main__":
+    Main()
